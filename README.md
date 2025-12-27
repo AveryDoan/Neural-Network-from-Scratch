@@ -10,7 +10,7 @@ A modular and educational implementation of a neural network built only with `nu
 - **Interactive Visualizer**: A premium web dashboard to watch the network learn in real-time.
 - **Gradient Checking**: Includes scripts to mathematically verify backpropagation accuracy.
 
-## roject Structure
+## Project Structure
 
 - `neural_network.py`: The core engine containing all modular layers and optimizers.
 - `docs/`: A standalone web application for interactive training visualization (hosted on GitHub Pages).
