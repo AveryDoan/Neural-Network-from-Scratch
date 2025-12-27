@@ -1,4 +1,5 @@
 # Neural Network from Scratch
+## Check it out: https://averydoan.github.io/Neural-Network-from-Scratch/
 
 A modular and educational implementation of a neural network built only with `numpy`. This project is designed to help you understand the inner workings of neural networks by breaking them down into customizable components.
 
