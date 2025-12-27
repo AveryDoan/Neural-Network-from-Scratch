@@ -2,28 +2,28 @@
 
 A modular and educational implementation of a neural network built only with `numpy`. This project is designed to help you understand the inner workings of neural networks by breaking them down into customizable components.
 
-## 🚀 Key Features
+## Key Features
 
 - **Modular Architecture**: Components like `Linear`, `ReLU`, and `Sequential` are built as independent blocks, similar to PyTorch.
 - **Educational Comments**: Every layer and math operation is documented to explain *why* it works.
 - **Interactive Visualizer**: A premium web dashboard to watch the network learn in real-time.
 - **Gradient Checking**: Includes scripts to mathematically verify backpropagation accuracy.
 
-## 📁 Project Structure
+## roject Structure
 
 - `neural_network.py`: The core engine containing all modular layers and optimizers.
 - `website/`: A standalone web application for interactive training visualization.
 - `main.ipynb`: A guided Jupyter notebook for experimentation and customization.
 - `test_modules.py`: A automated test suite for math verification and convergence.
 
-## 📊 The Data
+## The Data
 This project uses **Synthetic Gaussian Blobs** by default.
 - **Inputs**: 2D coordinates (easy for visualization).
 - **Classes**: 3 distinct clusters.
 - **Split**: 80% training / 20% testing.
 *(Note: The Python notebook also includes code to easily switch to the MNIST handwritten digits dataset!)*
 
-## 🛠️ How to Use
+## How to Use
 
 ### 1. Interactive Web Dashboard (Recommended)
 Watch the network in action without any setup:
@@ -42,7 +42,4 @@ To ensure the implementation is correct:
 ```zsh
 python3 test_modules.py
 ```
-
----
-*Built for educational purposes to demystify the "black box" of AI.*
 
