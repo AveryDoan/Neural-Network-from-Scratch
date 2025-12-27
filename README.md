@@ -2,22 +2,47 @@
 
 A modular and educational implementation of a neural network built only with `numpy`. This project is designed to help you understand the inner workings of neural networks by breaking them down into customizable components.
 
-## Project Structure
+## 🚀 Key Features
 
-- `neural_network.py`: Core modular components (`Linear`, `ReLU`, `Sequential`, etc.).
-- `main.ipynb`: Interactive Jupyter notebook for building, training, and customizing your network.
-- `test_modules.py`: Test suite for gradient checking and convergence verification.
+- **Modular Architecture**: Components like `Linear`, `ReLU`, and `Sequential` are built as independent blocks, similar to PyTorch.
+- **Educational Comments**: Every layer and math operation is documented to explain *why* it works.
+- **Interactive Visualizer**: A premium web dashboard to watch the network learn in real-time.
+- **Gradient Checking**: Includes scripts to mathematically verify backpropagation accuracy.
 
-## Features
+## 📁 Project Structure
 
-- **Modular Architecture**: Easy to swap activations or add layers.
-- **Educational Comments**: Detailed explanations of the math in each component.
-- **Gradient Checking**: Verified backward pass accuracy.
-- **Interactive Playground**: Customize learning rate, hidden units, and more in the notebook.
+- `neural_network.py`: The core engine containing all modular layers and optimizers.
+- `website/`: A standalone web application for interactive training visualization.
+- `main.ipynb`: A guided Jupyter notebook for experimentation and customization.
+- `test_modules.py`: A automated test suite for math verification and convergence.
 
-## How to use
+## 📊 The Data
+This project uses **Synthetic Gaussian Blobs** by default.
+- **Inputs**: 2D coordinates (easy for visualization).
+- **Classes**: 3 distinct clusters.
+- **Split**: 80% training / 20% testing.
+*(Note: The Python notebook also includes code to easily switch to the MNIST handwritten digits dataset!)*
 
-1. Open `main.ipynb`.
-2. Modify parameters in the "Customize These Parameters" section.
-3. Run all cells to train and visualize.
+## 🛠️ How to Use
+
+### 1. Interactive Web Dashboard (Recommended)
+Watch the network in action without any setup:
+- Simply open **`website/index.html`** in your browser.
+- Adjust parameters like Hidden Neurons and Learning Rate in the sidebar.
+- Click **"Start Training"** to see the loss curve and connections update live.
+
+### 2. Jupyter Notebook
+For a deeper dive into the code:
+- Open **`main.ipynb`**.
+- Modify the `HIDDEN_DIM`, `LEARNING_RATE`, and `EPOCHS` in the customization cell.
+- Run all cells to train and see visual predictions.
+
+### 3. Running Math Verification
+To ensure the implementation is correct:
+```zsh
+python3 test_modules.py
+```
+
+---
+*Built for educational purposes to demystify the "black box" of AI.*
 
