@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <h1>NN Visualizer</h1>
+                <p>Neural Network from Scratch</p>
+            </header>
+
+            <section class="controls">
+                <div class="control-group">
+                    <label for="neurons">Hidden Neurons</label>
+                    <input type="range" id="neurons" min="2" max="16" value="8">
+                    <span id="neurons-val">8</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="lr">Learning Rate</label>
+                    <input type="range" id="lr" min="0.001" max="0.5" step="0.001" value="0.1">
+                    <span id="lr-val">0.1</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="reg">Regularization</label>
+                    <input type="range" id="reg" min="0" max="0.01" step="0.0001" value="0.001">
+                    <span id="reg-val">0.001</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="epochs">Epochs</label>
+                    <input type="number" id="epochs" value="100">
+                </div>
+
+                <button id="train-btn" class="primary-btn">Start Training</button>
+                <button id="reset-btn" class="secondary-btn">Reset Model</button>
+            </section>
+
+            <footer class="stats">
+                <div class="stat-item">
+                    <label>Epoch:</label>
+                    <span id="epoch-display">0</span>
+                </div>
+                <div class="stat-item">
+                    <label>Loss:</label>
+                    <span id="loss-display">0.0000</span>
+                </div>
+                <div class="stat-item">
+                    <label>Accuracy:</label>
+                    <span id="acc-display">0.0%</span>
+                </div>
+            </footer>
+        </aside>
+
+        <main class="main-content">
+            <div class="card viz-container">
+                <h2>Network Architecture</h2>
+                <div class="canvas-wrapper">
+                    <canvas id="network-canvas"></canvas>
+                </div>
+            </div>
+
+            <div class="card chart-container">
+                <h2>Training Progress</h2>
+                <div class="chart-wrapper">
+                    <canvas id="loss-chart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="nn.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
