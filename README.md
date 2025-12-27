@@ -12,7 +12,7 @@ A modular and educational implementation of a neural network built only with `nu
 ## roject Structure
 
 - `neural_network.py`: The core engine containing all modular layers and optimizers.
-- `website/`: A standalone web application for interactive training visualization.
+- `docs/`: A standalone web application for interactive training visualization (hosted on GitHub Pages).
 - `main.ipynb`: A guided Jupyter notebook for experimentation and customization.
 - `test_modules.py`: A automated test suite for math verification and convergence.
 
@@ -25,9 +25,10 @@ This project uses **Synthetic Gaussian Blobs** by default.
 
 ## How to Use
 
-### 1. Interactive Web Dashboard (Recommended)
-Watch the network in action without any setup:
-- Simply open **`website/index.html`** in your browser.
+### 1. Interactive Web Dashboard (Live)
+Watch the network in action instantly:
+- **Live Version**: [https://averydoan.github.io/Neural-Network-from-Scratch/](https://averydoan.github.io/Neural-Network-from-Scratch/)
+- **Local Version**: Open **`docs/index.html`** in your browser.
 - Adjust parameters like Hidden Neurons and Learning Rate in the sidebar.
 - Click **"Start Training"** to see the loss curve and connections update live.
 
